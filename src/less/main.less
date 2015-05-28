@@ -1,0 +1,128 @@
+body{
+	background: #e2e2e2;
+	margin: 0;
+	padding: 0;
+	p{
+		color: #fff;
+	}
+	a {
+	    font-family: Arial;
+	    font-style: italic;
+	    font-size: 14px;
+	    line-height: 18px; 
+	    font-weight: bold;
+	    background-image: url('example.png');
+	    background-color: red;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	}
+
+
+	section{
+		&.hero{
+			height: 400px;
+		}
+		&.main{
+			background: #003471;
+			background-image: url(../images/foto.png);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			background-size: 60vw auto;
+		}
+		&.jobs{
+			width: 100%;
+			margin: 0 auto;
+			clear: both;
+			display: table;
+			.blocks{
+				box-sizing:border-box;
+				padding: 0 10vw;
+				width: 100vw;
+				display: table;
+				position: relative;
+				top: -64px;
+				div{
+					width: 20vw;
+					height: 20vw;
+					line-height: 20vw;
+					background: red;
+					font-size: 50px;
+					text-align: center;
+					float: left;
+					border: 1px solid #000;
+					position: relative;
+					box-sizing:border-box;
+					&.left-space{
+						margin-left: 20vw;
+					}
+					&.right-space{
+						margin-right: 20vw;
+					}
+					&.right-double-space{
+						margin-right: 40vw;
+					}
+					&.double-width{
+						width: 40vw;
+					}
+					&.double-height{
+						height: 40vw;
+						line-height: 40vw;
+					}
+					&.negative-line{
+					    margin-top: -20vw;
+					}
+				}
+			}
+		}
+		&.about{
+			height: 50vw;
+		}
+	}
+
+
+	@media screen and (max-width: 480px) {
+		section{
+			&.hero{
+				height: 400px;
+			}
+			&.main{
+				background-size: 100vw auto;
+			}
+			&.jobs{
+				width: 100vw;
+				.blocks{
+
+					padding: 0 3vw;
+					div{
+						width: 47.5vw;
+						height: 47.5vw;
+						line-height: 47.5vw;
+						&.left-space{
+							margin-left: 47.5vw;
+						}
+						&.right-space{
+							margin-right: 47.5vw;
+						}
+						&.right-double-space{
+							margin-right: 40vw;
+						}
+						&.double-width{
+							width: 95vw;
+						}
+						&.double-height{
+							height: 95vw;
+							line-height: 95vw;
+						}
+						&.negative-line{
+						    margin-top: 0;
+						}
+					}
+				}
+				&.about{
+					height: 50vw;
+				}
+			}
+		}
+	}
+
+}
